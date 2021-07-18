@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+
+    font-family: 'CookieRun-Regular'; 
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased; 
+}
+
+a { 
+}
+
+button { cursor: pointer; }
+
+div { 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* h1 { font-family: 'Noto Sans KR'; font-size: 64px; line-height: 1.2; font-weight: 700; }
+
+h2 { font-family: 'Noto Sans KR'; font-size: 50px; line-height: 1.2; font-weight: 500; }
+
+h3 { font-family: 'Noto Sans KR'; font-size: 26px; line-height: 1.4; font-weight: 400; }
+
+h4 { font-family: 'Noto Sans KR'; font-size: 19.2px; line-height: 1.4; font-weight: 400; }
+
+p { font-family: 'Noto Sans KR'; font-size: 16px; line-height: 1.5; font-weight: 400; } */

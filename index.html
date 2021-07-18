@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠키런 : 킹덤</title>
+
+    <link rel="stylesheet" href="css/reset_cookierun.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+</head>
+<body onscroll="menuScroll()">
+
+    <!-- GNB -->
+    <section id="gnb">
+        <!-- gnb top -->
+        <nav class="gnb-top">
+            <div class="gnb-top__wrap">
+                <div class="company-logo">
+                    <a href="">
+                        <svg viewBox="0 0 675 71" xmlns="http://www.w3.org/2000/svg" class="css-1qntfi7"><path d="M514.414 51.922h-.062c-.963 1.715-2.386 2.97-4.269 3.765a14.273 14.273 0 01-5.712 1.193c-1.967 0-3.767-.335-5.399-1.004a12.122 12.122 0 01-4.269-2.762c-1.213-1.255-2.155-2.782-2.825-4.58-.669-1.8-1.004-3.85-1.004-6.151v-5.334c0-2.301.335-4.352 1.004-6.15.67-1.8 1.591-3.306 2.763-4.519a11.712 11.712 0 014.268-2.824c1.674-.67 3.474-1.004 5.399-1.004 2.511 0 4.603.481 6.277 1.443 1.716.963 3.013 2.071 3.892 3.326V23.18h4.206V56.44c0 4.812-1.255 8.43-3.766 10.857-2.47 2.469-5.818 3.703-10.044 3.703-2.386 0-4.52-.314-6.403-.941-1.842-.628-3.474-1.486-4.897-2.573l1.946-3.326c.796.543 1.549.983 2.26 1.317.712.377 1.423.67 2.135.879.753.251 1.527.418 2.322.502.795.084 1.674.126 2.637.126 3.138 0 5.503-.858 7.093-2.573 1.632-1.674 2.448-4.289 2.448-7.845v-4.644zm-19.271-10.167c0 3.64.858 6.443 2.573 8.41 1.716 1.966 3.997 2.95 6.843 2.95 1.381 0 2.657-.168 3.829-.503 1.214-.376 2.26-.92 3.139-1.631a7.999 7.999 0 002.071-2.762c.544-1.13.816-2.447.816-3.953v-9.54c0-1.003-.251-1.987-.753-2.949-.46-1.004-1.13-1.904-2.009-2.698-.879-.837-1.925-1.507-3.138-2.009-1.214-.502-2.532-.753-3.955-.753-2.888 0-5.189 1.004-6.905 3.013-1.674 1.966-2.511 4.748-2.511 8.346v4.08zM537.961 57.507c-3.222 0-5.838-.857-7.847-2.573-2.009-1.715-3.013-4.079-3.013-7.091v-1.38c0-2.762 1.004-5 3.013-6.716 2.009-1.715 4.98-2.573 8.914-2.573h9.542v-3.138c0-2.468-.691-4.35-2.072-5.648-1.339-1.339-3.327-2.008-5.963-2.008-1.842 0-3.599.335-5.273 1.004a21.856 21.856 0 00-4.708 2.448l-2.072-3.264a28.712 28.712 0 015.273-2.824c1.967-.795 4.248-1.192 6.842-1.192 3.809 0 6.78.941 8.914 2.824 2.177 1.883 3.265 4.54 3.265 7.97v23.66h-4.143v-4.143h-.063c-.335.544-.837 1.11-1.507 1.695-.628.544-1.381 1.046-2.26 1.506-1.925.962-4.206 1.443-6.842 1.443zm10.609-16.756h-9.479c-2.72 0-4.687.544-5.901 1.632-1.213 1.088-1.82 2.51-1.82 4.267v1.005c0 1.087.209 2.029.627 2.824.419.753.963 1.38 1.633 1.882a7.964 7.964 0 002.322 1.13c.879.21 1.758.314 2.637.314 1.339 0 2.553-.168 3.641-.502a13.262 13.262 0 003.138-1.444 7.882 7.882 0 002.26-2.134c.628-.878.942-1.966.942-3.263v-5.71zM596.479 22.552c3.85 0 6.654 1.046 8.412 3.138 1.799 2.092 2.699 4.937 2.699 8.535v22.78h-4.269v-21.65c0-1.381-.125-2.616-.376-3.703-.209-1.088-.607-2.009-1.193-2.762-.544-.795-1.318-1.401-2.323-1.82-.962-.418-2.197-.627-3.703-.627-1.381 0-2.595.25-3.641.753a9.097 9.097 0 00-2.699 1.945 9.464 9.464 0 00-1.695 2.699c-.377 1.004-.586 1.987-.628 2.95v22.215h-4.269v-21.65c0-1.381-.125-2.616-.376-3.703-.21-1.088-.607-2.009-1.193-2.762-.544-.795-1.318-1.401-2.323-1.82-.962-.418-2.197-.627-3.703-.627-1.381 0-2.616.272-3.704.816a8.398 8.398 0 00-2.762 2.008 9.272 9.272 0 00-1.632 2.761 8.518 8.518 0 00-.565 3.013v21.964h-4.269V23.18h4.206v4.707c.377-.67.837-1.318 1.381-1.945a9.407 9.407 0 012.072-1.757c.795-.503 1.674-.9 2.636-1.193 1.005-.293 2.135-.44 3.39-.44 2.72 0 4.917.545 6.591 1.633 1.674 1.046 2.888 2.552 3.641 4.518a12.8 12.8 0 011.444-2.134 11.21 11.21 0 012.197-2.008 12.897 12.897 0 012.95-1.443c1.13-.377 2.365-.565 3.704-.565zM638.91 37.864V37.3c0-3.556-.816-6.276-2.448-8.159-1.632-1.882-3.934-2.824-6.905-2.824-3.014 0-5.357 1.004-7.031 3.013-1.632 1.966-2.448 4.623-2.448 7.97v.565h18.832zm3.515 15.815c-1.339.962-3.013 1.841-5.022 2.636-2.008.795-4.436 1.192-7.281 1.192-4.52 0-8.036-1.338-10.547-4.016-2.51-2.72-3.766-6.548-3.766-11.485v-4.204c0-4.812 1.214-8.556 3.641-11.234 2.469-2.677 5.838-4.016 10.107-4.016 4.436 0 7.804 1.38 10.106 4.142 2.344 2.72 3.515 6.464 3.515 11.233v3.515h-23.1v.564c0 3.766.899 6.674 2.699 8.724 1.799 2.008 4.269 3.012 7.407 3.012 2.26 0 4.248-.335 5.964-1.004 1.716-.67 3.18-1.444 4.394-2.322l1.883 3.263zM662.32 53.68c2.762 0 4.854-.545 6.277-1.633 1.423-1.087 2.134-2.363 2.134-3.828v-.627c0-1.716-.711-3.012-2.134-3.891-1.381-.879-3.704-1.632-6.968-2.26-1.716-.334-3.264-.732-4.645-1.192-1.381-.46-2.553-1.046-3.515-1.757-.963-.711-1.716-1.548-2.26-2.51-.544-1.004-.816-2.197-.816-3.577v-.879a8.14 8.14 0 01.753-3.451c.502-1.088 1.255-2.03 2.26-2.825 1.004-.836 2.26-1.485 3.766-1.945 1.549-.502 3.369-.753 5.462-.753 2.594 0 4.833.335 6.716 1.004 1.884.628 3.516 1.464 4.897 2.51l-1.946 3.2c-1.423-.961-2.867-1.694-4.332-2.196-1.464-.502-3.285-.753-5.461-.753-2.553 0-4.499.523-5.838 1.57-1.339 1.003-2.009 2.238-2.009 3.702v.69c0 1.464.733 2.615 2.197 3.452 1.507.837 3.599 1.506 6.278 2.008 4.185.795 7.198 1.925 9.039 3.389 1.883 1.464 2.825 3.556 2.825 6.276v.94a7.493 7.493 0 01-.942 3.703c-.627 1.13-1.506 2.113-2.636 2.95-1.088.795-2.386 1.402-3.892 1.82-1.507.46-3.16.69-4.959.69-2.762 0-5.231-.376-7.408-1.13-2.134-.71-3.996-1.652-5.586-2.823l2.071-3.39a24.272 24.272 0 004.959 2.574c1.8.627 3.704.941 5.713.941zM0 1.486h23.215c17.571 0 32.01 12.427 32.01 28.368 0 15.98-14.539 28.348-32.01 28.348H0V1.486zm16.367 44.248h3.685c9.78 0 18.124-4.818 18.124-15.88 0-10.149-7.43-15.87-17.954-15.87h-3.855v31.75zM75.85 13.993v9.496h18.465v12.468H75.85v9.777h19.459v12.477H59.473V1.486h35.836v12.507h-19.46zM128.484 35.957l15.293-34.471h17.792l-26.91 56.726h-12.701L95.51 1.486h17.772l15.202 34.47zM196.903 16.091c-3.002-2.248-6.837-3.744-10.864-3.744-2.992 0-7.019 1.566-7.019 4.728 0 3.323 4.439 4.587 7.28 5.42l4.177 1.125c8.776 2.329 15.544 6.324 15.544 15.499 0 5.651-1.507 11.443-6.527 15.288-4.92 3.734-11.517 5.33-17.883 5.33-7.922 0-15.714-2.409-22.13-6.464l6.998-11.906c4.127 3.243 8.947 5.853 14.56 5.853 3.845 0 7.942-1.717 7.942-5.702 0-4.116-6.456-5.571-9.961-6.475-10.271-2.63-17.059-5.049-17.059-16C161.971 7.519 171.108 0 183.71 0c6.356 0 14.117 1.817 19.72 4.678l-6.527 11.413zM226.826 58.212h-16.397V1.486h16.397v56.726zM268.757 16.091c-3.003-2.248-6.858-3.744-10.845-3.744-3.032 0-7.018 1.566-7.018 4.728 0 3.323 4.428 4.587 7.259 5.42l4.177 1.125c8.776 2.329 15.534 6.324 15.534 15.499 0 5.651-1.516 11.443-6.527 15.288-4.93 3.734-11.517 5.33-17.873 5.33-7.922 0-15.714-2.409-22.14-6.464l7.019-11.906c4.076 3.243 8.946 5.853 14.539 5.853 3.835 0 7.922-1.717 7.922-5.702 0-4.116-6.446-5.571-9.93-6.475-10.282-2.63-17.05-5.049-17.05-16C233.834 7.519 242.941 0 255.553 0c6.336 0 14.117 1.817 19.72 4.678l-6.516 11.413zM290.977 58.212V13.992h-13.525V1.486h43.437v12.507h-13.535v44.219h-16.377zM339.857 13.993v9.496h18.455v12.468h-18.455v9.777h19.469v12.477H323.49V1.486h35.836v12.507h-19.469zM418.478 58.212h-20.384l-15.473-21.803h-.14v21.803h-16.387V1.486h24.48c12.461 0 21.909 5.38 21.909 17.466 0 7.83-4.88 14.586-13.796 16.021l19.791 23.239zm-36.007-31.28h1.576c5.352 0 11.366-.913 11.366-7.096 0-6.134-6.014-7.057-11.366-7.057h-1.576v14.154z" fill="rgb(174, 174, 179)"></path><path d="M452.456 16.091c-2.992-2.248-6.838-3.744-10.844-3.744-3.032 0-7.009 1.566-7.009 4.728 0 3.323 4.408 4.587 7.25 5.42l4.177 1.125c8.776 2.329 15.543 6.324 15.543 15.499 0 5.651-1.486 11.443-6.526 15.288-4.93 3.734-11.517 5.33-17.863 5.33-7.943 0-15.704-2.409-22.15-6.464l7.018-11.906c4.117 3.243 8.947 5.853 14.539 5.853 3.836 0 7.943-1.717 7.943-5.702 0-4.116-6.426-5.571-9.931-6.475-10.302-2.63-17.059-5.049-17.059-16C417.544 7.519 426.651 0 439.272 0c6.356 0 14.098 1.817 19.721 4.678l-6.537 11.413z" fill="rgb(174, 174, 179)"></path></svg>
+                    </a>
+                </div>
+                <div class="gnb-top__right">
+                    <a href="">고객센터</a>
+
+                    <!-- language select -->
+                    <form id="lang-select">
+                        <select  id="language" name="language" onchange="languageChange();">
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                            <option value="ch">繁體中文</option>
+                            <option value="th">ภาษาไทย</option>
+                        </select>
+                        <svg viewBox="0 0 69 60" style="width:8px" fill="#AEAEB3" class="css-1as11id"><path d="M34.49 59.81L.154.342h68.676L34.491 59.81z"></path></svg>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- gnb bottom -->
+        <nav class="gnb-bottom">
+            <div class="gnb-bottom__wrap">
+                <div class="gnb-bottom__logo">
+                    <a href="#main-visual"><img src="img/flat-logo-ko.png" alt=""></a>
+                </div>
+                <ul class="gnb-bottom__menu">
+                    <li><a href="#game-info">게임소개</a></li>
+                    <li><a href="#characters">캐릭터</a></li>
+                    <li><a href="#world">세계관</a></li>
+                    <li><a href="#media">미디어</a></li>
+                    <li><a href="https://game.devplay.com/coupon/ck/ko" target="__blank">쿠폰입력</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="gnb-mobile">
+
+            <div class="gnb-mobile__open" onclick="mobileMenuOpen()">
+                <img src="img/btn-mobileMenu.svg" alt="">
+            </div>
+
+            <div class="gnb-mobile__wrap">
+
+                <!-- close -->
+                <div class="gnb-mobile__close" onclick="mobileMenuClose()">
+                    <svg viewBox="0 0 60 62" width="50px" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M27.95 23.5l16.97 16.971a3.5 3.5 0 01-4.949 4.95L23 28.45 6.029 45.421a3.5 3.5 0 01-4.949-4.95L18.05 23.5 1.08 6.529A3.499 3.499 0 116.029 1.58L23 18.55 39.971 1.58a3.499 3.499 0 114.949 4.949L27.95 23.5z"></path></svg>
+                </div>
+
+                <!-- logo -->
+                <div class="gnb-mobile__logo">
+                    <a href="#main-visual"><img src="img/logo-ko.png" alt=""></a>
+                </div>
+
+                <!-- menu -->
+                <ul class="gnb-mobile__menu">
+                    <li onclick="mobileMenuClose()"><a href="#game-info">게임소개</a></li>
+                    <li onclick="mobileMenuClose()"><a href="#characters">캐릭터</a></li>
+                    <li onclick="mobileMenuClose()"><a href="#world">세계관</a></li>
+                    <li onclick="mobileMenuClose()"><a href="#media">미디어</a></li>
+                    <li><a href="https://game.devplay.com/coupon/ck/ko" target="__blank">쿠폰입력</a></li>
+                </ul>
+
+                <!-- deco-line -->
+                <div class="deco-line">
+                    <svg viewBox="0 0 226 13" width="226px" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-1y99ev2"><g clip-path="url(#divider_svg__clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M213.687 13c0-3.055-3.559-5.111-5.483-6H120V6h88.204c1.925-.889 5.483-2.945 5.483-6 0 0 1.21 4.275-1.202 6h5.014l4.001-4 4.5 4.5-4.5 4.5-4.001-4h-5.015c2.413 1.724 1.203 6 1.203 6zM113.5 2l4.5 4.5-4.5 4.5-4.5-4.5 4.5-4.5zM12.313 0c0 3.055 3.558 5.111 5.483 6H107v1H17.797c-1.925.889-5.484 2.945-5.484 6 0 0-1.21-4.276 1.203-6H8.501L4.5 11 0 6.5 4.5 2l4 4h5.015c-2.412-1.725-1.202-6-1.202-6z" fill="#fff" fill-opacity="0.3"></path></g><defs><clipPath id="divider_svg__clip0"><path fill="#fff" transform="rotate(90 113 113)" d="M0 0h13v226H0z"></path></clipPath></defs></svg>  
+                </div>
+
+                <!-- sns link -->
+                <ul class="sns-link__wrap">
+                    <li><a href="https://www.facebook.com/CRKingdomKR/" target="__blank">
+                        <svg viewBox="0 0 33 70" height="35px" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-perrg6"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.227 52.428c0-5.481-.021-10.96.019-16.438.006-.922-.254-1.213-1.176-1.176-1.709.068-3.42-.006-5.129.03-.693.02-.947-.172-.94-.906.033-3.42.03-6.84.002-10.26-.006-.66.192-.873.858-.86 1.748.04 3.5-.05 5.246.036 1.012.05 1.22-.31 1.2-1.247a168.55 168.55 0 01-.002-7.812c.068-3.179.922-6.147 2.816-8.731C12.514 1.795 15.918.3 19.85.124c4.036-.18 8.081-.08 12.12-.124.564-.006.73.195.73.743-.018 3.457-.02 6.918.004 10.375.006.616-.195.804-.799.792-1.943-.03-3.887-.015-5.828-.01-2.587.01-4.135 1.341-4.296 3.9-.13 2.053-.034 4.117-.083 6.178-.019.734.418.684.904.684 2.952-.003 5.908.028 8.86-.021.867-.016 1.152.186 1.053 1.096-.371 3.435-.69 6.877-.984 10.322-.068.777-.42.925-1.12.913-2.331-.037-4.662-.025-6.995-.01-1.675.01-1.51-.244-1.51 1.464-.01 10.725-.023 21.453.024 32.177.006 1.133-.285 1.415-1.405 1.393a310.775 310.775 0 00-12.01.003c-1.126.022-1.312-.359-1.302-1.365.037-5.404.015-10.805.015-16.206z" fill="#fff"></path></svg>
+                    </a></li>
+                    <li><a href="https://twitter.com/CRKingdomKR" target="__blank">
+                        <svg viewBox="0 0 70 58" width="35px" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-25eng2"><path d="M22.015 58c26.417 0 40.862-22.312 40.862-41.66 0-.634-.012-1.265-.042-1.892A29.554 29.554 0 0070 6.866a28.265 28.265 0 01-8.248 2.305 14.645 14.645 0 006.314-8.099 28.454 28.454 0 01-9.12 3.554C56.33 1.779 52.596 0 48.466 0c-7.931 0-14.364 6.558-14.364 14.641 0 1.149.126 2.267.373 3.339-11.936-.612-22.52-6.439-29.603-15.3a14.81 14.81 0 00-1.946 7.36c0 5.081 2.535 9.565 6.39 12.189a14.044 14.044 0 01-6.503-1.831c-.004.06-.004.122-.004.186 0 7.092 4.95 13.011 11.523 14.355a14.044 14.044 0 01-6.485.25c1.827 5.818 7.13 10.052 13.418 10.171-4.918 3.927-11.11 6.269-17.839 6.269-1.16 0-2.301-.068-3.426-.203C6.356 55.577 13.903 58 22.015 58z" fill="#fff"></path></svg>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAOTbNctDD0Hg5MG0enQpMQ" target="__blank">
+                        <svg viewBox="0 0 43 31" width="35px" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-ro4cl8"><path fill-rule="evenodd" clip-rule="evenodd" d="M38.3.895A5.397 5.397 0 0142.105 4.7C43 8.05 43 15.05 43 15.05s0 6.996-.895 10.35a5.398 5.398 0 01-3.804 3.804C34.947 30.1 21.5 30.1 21.5 30.1s-13.44 0-16.8-.895A5.397 5.397 0 01.895 25.4C0 22.046 0 15.05 0 15.05s0-7 .895-10.35A5.403 5.403 0 014.7.895C8.06 0 21.5 0 21.5 0s13.447 0 16.8.895zM28.24 15.007l-11.17 6.45v-12.9l11.17 6.45z" fill="#fff"></path></svg>
+                    </a></li>
+                    <li><a href="https://cafe.naver.com/crkingdom" target="__blank">
+                        <svg viewBox="0 0 35 35" width="35px" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-1n9ccqt"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.323C0 28.877 6.137 35 13.709 35c5.912 0 10.95-3.733 12.873-8.964h2.06c3.51 0 6.356-2.839 6.356-6.34 0-3.502-2.846-6.341-6.356-6.341H0v7.968zm27.295 1.836c.08-.601.123-1.213.123-1.835v-5.096h1.224a3.47 3.47 0 013.474 3.465 3.47 3.47 0 01-3.474 3.466h-1.347zM5.725 9.118h10.318c5.047 0 9.14-4.081 9.14-9.118h-10.32C9.817 0 5.725 4.082 5.725 9.118z" fill="#fff"></path></svg>
+                    </a></li>
+                </ul>
+
+                <!-- language select -->
+                <div class="lang-select__wrap">
+                    <form id="lang-select">
+                        <select  id="language" name="language" onchange="languageChange();">
+                            <option value="ko">한국어</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                            <option value="ch">繁體中文</option>
+                            <option value="th">ภาษาไทย</option>
+                        </select>
+                        <svg viewBox="0 0 69 60" style="width:8px" fill="#AEAEB3" class="css-1as11id"><path d="M34.49 59.81L.154.342h68.676L34.491 59.81z"></path></svg>
+                    </form>
+    
+                </div>
+            </div>
+        </nav>
+
+        <!-- cafe link -->
+        <div class="cafe-link">
+            <a href="https://cafe.naver.com/crkingdom" target="_blank">
+            <img src="img/naverCafeLogo.png" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <!-- main-visual -->
+    <section id="main-visual">
+        <div class="main-visual__wrap">
+
+            <!-- main visual video -->
+            <div class="main-visual__video">
+                <video class="video-pc" muted autoplay loop>
+                    <source src="video/pc.h264-8775f0e4c0abc7c39d7fd96533ef007a.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- main visual content -->
+            <div class="main-visual__contentbox">
+
+                <!-- logo -->
+                <div class="main-visual__logo">
+                    <img src="img/logo-ko.png" alt="">
+                </div>
+    
+                <!-- btn play -->
+                <div class="btn-play" onclick="mvModalOpen()">
+                    <svg viewBox="0 0 162 164" fill="none" width="150px" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.187 81.099L80.302.984l80.115 80.115-80.115 80.116L.187 81.099z" fill="#201A17"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M86.819 156.579l-6.018-6.033-6.017 6.033L0 81.6 74.784 6.619l6.017 6.033 6.018-6.033L161.603 81.6l-74.784 74.979zM74.784 9.016L2.388 81.6l72.396 72.583 4.822-4.835L12.034 81.6l67.572-67.75-4.822-4.834zm5.563 5.577L14.422 81.6l66.379 66.55 66.38-66.55-66.834-67.007zm1.187-1.206L149.569 81.6l-67.573 67.748 4.823 4.835L159.215 81.6 86.819 8.016l-5.285 5.371zm-4.88-9.228L80.802 0l4.148 4.159-4.148 4.158-4.148-4.158zM84.95 159.04l-4.148 4.158-4.148-4.158 4.148-4.159 4.148 4.159z" fill="url(#button_svg__paint0_linear)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M73.362 63.599c-1.414 0-2.56 1.126-2.56 2.515v30.171c0 1.389 1.146 2.514 2.56 2.514L98.5 83.096a2.196 2.196 0 001.102-1.897c0-.779-.419-1.5-1.102-1.896L73.362 63.599z" fill="url(#button_svg__paint1_linear)"></path><defs><linearGradient id="button_svg__paint0_linear" x1="80.802" y1="0" x2="160.894" y2="97.204" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF276"></stop><stop offset="0.63" stop-color="#FFE81E"></stop><stop offset="1" stop-color="#FEC60D"></stop></linearGradient><linearGradient id="button_svg__paint1_linear" x1="85.202" y1="63.599" x2="102.802" y2="81.248" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF276"></stop><stop offset="0.63" stop-color="#FFE81E"></stop><stop offset="1" stop-color="#FEC60D"></stop></linearGradient></defs></svg>
+                </div>
+    
+                <!-- market link -->
+                <div class="market-link">
+                    <a href="https://play.google.com/store/apps/details?id=com.devsisters.ck" target="_blank"><img src="img/googleplay.svg" alt=""></a>
+                    <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000751155&scYn=Y" target="_blank"><img src="img/onestore.svg" alt=""></a>
+                    <a href="https://apps.apple.com/kr/app/id1509450845" target="_blank"><img src="img/appstore.svg" alt=""></a>
+                </div>
+
+                <!-- btn scroll -->
+                <div class="btn-scroll">
+                    <a href="#game-info">
+                        <svg width="44" height="64" viewBox="0 0 44 59" fill="none" xmlns="http://www.w3.org/2000/svg"><style>@keyframes bounce{0%,to{transform:translateY(0)}50%{transform:translateY(5px)}}@keyframes bounceFadeOut{0%,to{opacity:.6;transform:translateY(0)}50%{opacity:.3;transform:translateY(5px)}}.button_svg__triangle{animation-name:bounce;animation-duration:1.5s;animation-delay:0s;animation-timing-function:ease;animation-iteration-count:infinite}</style><g opacity="0.8"><path class="button_svg__triangle" d="M18 24h8.403l-4.201 6L18 24z" fill="#FFE895" fill-opacity="0.6"></path><path class="button_svg__triangle" d="M4 16.995h36.5L22.225 42 4 16.995zM0 15l22.225 30L44 15H0z" fill="#FFE895" fill-opacity="0.6"></path><path d="M12.595 40.155l9.63 13.45 9.63-13.45h2.11L22.225 56l-11.74-15.845h2.11z" fill="#FFE895" fill-opacity="0.6" style="animation-name:bounceFadeOut;animation-duration:1.5s;animation-delay:0s;animation-timing-function:ease;animation-iteration-count:infinite"></path><path d="M3.624 10.156c1.812 0 2.952-1.08 2.952-2.46 0-1.308-.816-1.908-1.824-2.352l-1.272-.54c-.672-.288-1.464-.624-1.464-1.524 0-.828.684-1.344 1.704-1.344.84 0 1.488.324 2.028.84l.528-.636c-.6-.636-1.5-1.08-2.556-1.08-1.56 0-2.712.96-2.712 2.292 0 1.284.972 1.884 1.788 2.232l1.272.564c.84.372 1.5.672 1.5 1.62 0 .9-.732 1.512-1.932 1.512-.936 0-1.824-.432-2.46-1.116l-.6.684a4.103 4.103 0 003.048 1.308zm7.966 0c1.14 0 1.992-.456 2.676-1.26l-.552-.624c-.576.648-1.224 1.008-2.076 1.008-1.728 0-2.808-1.428-2.808-3.696 0-2.256 1.128-3.648 2.844-3.648.768 0 1.368.336 1.824.84l.552-.648a3.225 3.225 0 00-2.388-1.068c-2.22 0-3.852 1.728-3.852 4.548 0 2.844 1.608 4.548 3.78 4.548zm5.337-8.136h1.536c1.416 0 2.196.432 2.196 1.632 0 1.176-.78 1.74-2.196 1.74h-1.536V2.02zM21.883 10l-2.268-3.888c1.236-.276 2.04-1.08 2.04-2.46 0-1.8-1.248-2.436-3.036-2.436h-2.688V10h.996V6.208h1.644L20.767 10h1.116zm4.764.156c2.184 0 3.72-1.776 3.72-4.584 0-2.796-1.537-4.512-3.72-4.512-2.172 0-3.708 1.716-3.708 4.512 0 2.808 1.535 4.584 3.707 4.584zm0-.876c-1.62 0-2.688-1.452-2.688-3.708 0-2.244 1.067-3.636 2.688-3.636 1.632 0 2.7 1.392 2.7 3.636 0 2.256-1.069 3.708-2.7 3.708zm5.655.72h4.872v-.84h-3.876V1.216h-.996V10zm6.434 0h4.872v-.84h-3.876V1.216h-.996V10z" fill="#ADA06E"></path></g></svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- main visual modal popup -->
+            <div class="mv-modal">
+                <div class="mv-modal__wrap">
+                    <div class="btn-close" onclick="mvModalClose()">
+                        <svg class="btn-close__x" viewBox="0 0 31 30" fill="#C08D55" xmlns="http://www.w3.org/2000/svg" class="css-14pan16"><path d="M2.86 3.435l.578-.575L26.18 25.601l-.574.579L2.86 3.434z"></path><path d="M23.39 25.361l1.029 1.025 4.198 2.231-2.231-4.202-1.025-1.024-1.97 1.97zM1.286 3.257l1.028 1.025 4.198 2.23-2.227-4.201-1.029-1.025-.12 1.851-1.85.12zM27.427 2.86l.574.579-22.74 22.74-.579-.574L27.427 2.86z"></path><path d="M5.5 23.39l-1.024 1.03-2.232 4.197 4.202-2.227 1.025-1.029-1.97-1.97zM27.6 1.294L26.576 2.32l-2.231 4.202 4.198-2.231 1.028-1.025-1.85-.124-.12-1.847z"></path><path d="M2.86 3.435l.578-.575L26.18 25.601l-.574.579L2.86 3.434z" stroke="#C08D55" stroke-width="0.5"></path><path d="M23.39 25.361l1.029 1.025 4.198 2.231-2.231-4.202-1.025-1.024-1.97 1.97zM1.286 3.257l1.028 1.025 4.198 2.23-2.227-4.201-1.029-1.025-.12 1.851-1.85.12zM27.427 2.86l.574.579-22.74 22.74-.579-.574L27.427 2.86z" stroke="#C08D55" stroke-width="0.5"></path><path d="M5.5 23.39l-1.024 1.03-2.232 4.197 4.202-2.227 1.025-1.029-1.97-1.97zM27.6 1.294L26.576 2.32l-2.231 4.202 4.198-2.231 1.028-1.025-1.85-.124-.12-1.847z" stroke="#C08D55" stroke-width="0.5"></path></svg>
+
+                        <svg class="btn-close__bg" viewBox="0 0 62 70" fill="#321700" stroke="#C08D55" xmlns="http://www.w3.org/2000/svg" class="css-nq4ubr"><g filter="url(#closeButtonPolygon_svg__filter0_d)"><path d="M31 1l25.98 15v30L31 61 5.02 46V16L31 1z"></path><path d="M31 1l25.98 15v30L31 61 5.02 46V16L31 1z" stroke-width="1.5"></path></g><defs><filter id="closeButtonPolygon_svg__filter0_d" x="0.269" y="0.134" width="61.462" height="69.732" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                    </div>
+                    <iframe class="mv-modal__video" width="1064" height="600" src="https://www.youtube.com/embed/3gguVLkgs9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- game-info -->
+    <section id="game-info">
+        <div class="game-info__wrap">
+
+            <!-- deco -->
+            <div class="deco__wrap">
+                <div class="left-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+                <div class="center-deco">
+                    <img src="img/centerDeco.png" alt="">
+                </div>
+                <div class="right-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+            </div>
+            
+            <!-- text -->
+            <div class="text__wrap">
+                <h3 class="sub-title__dark">COOKIERUN KINGDOM</h3>
+                <h2 class="title__dark">게임소개</h2>
+            </div>
+
+            <!-- info button -->
+            <ul class="game-info__list">
+                <li class="game-info__li" onclick="infoChange(0)">모험</li>
+                <li class="game-info__li" onclick="infoChange(1)">왕국</li>
+                <li class="game-info__li" onclick="infoChange(2)">납품</li>
+                <li class="game-info__li" onclick="infoChange(3)">PVP</li>
+                <li class="game-info__li" onclick="infoChange(4)">길드</li>
+            </ul>
+
+            <div class="game-info__content">
+                <div class="btn-slide__left" onclick="slideLeft()"><img src="img/btn-slide.png" alt=""></div>
+                <div class="img-box">
+                    <img class="img-frame" src="img/frame.png" alt="">
+                    <img class="slide-img" src="img/gameContents-ko-01.jpg" alt="">
+                </div>
+                <div class="btn-slide__right" onclick="slideRight()"><img src="img/btn-slide.png" alt=""></div>
+            </div>
+
+            <div class="slide" id="slide-circle">
+                <span class="slide-circle1"></span>
+                <span class="slide-circle2"></span>
+                <span class="slide-circle3"></span>
+                <span class="slide-circle4"></span>
+                <span class="slide-circle5"></span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- characters -->
+    <section id="characters">
+        <div class="characters__wrap">
+
+            <div class="deco__wrap">
+                <div class="left-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+                <div class="center-deco">
+                    <img src="img/centerDeco.png" alt="">
+                </div>
+                <div class="right-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+            </div>
+            
+            <div class="text__wrap">
+                <h3 class="sub-title__light">COOKIERUN KINGDOM</h3>
+                <h2 class="title__light">CHARACTERS</h2>
+                <p>일부 캐릭터는 추후 업데이트 예정입니다.</p>
+            </div>
+
+            <!-- category -->
+            <ul class="characters-category">
+                <li class="characters-category__li" onclick="characterCate(0)">영웅쿠키</li>
+                <li class="characters-category__li" onclick="characterCate(1)">용감한 쿠키와 친구들</li>
+                <li class="characters-category__li" onclick="characterCate(2)">전설쿠키</li>
+                <li class="characters-category__li" onclick="characterCate(3)">악당쿠키</li>
+            </ul>
+
+            <div class="characters-content">
+
+                <div class="character-btn">
+
+                    <!-- hero Cookie -->
+                    <ul class="btn-icon__wrap btn-hero">
+                        <li class="icon-bg" onclick="characterChange1(0)">
+                            <img src="img/pure-vanilla-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange1(1)">
+                            <img src="img/hollyberry-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange1(2)">
+                            <img src="img/golden-cheese-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange1(3)">
+                            <img src="img/dark-cacao-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange1(4)">
+                            <img src="img/white-lily-cookie.webp" alt="">
+                        </a></li>
+                    </ul>
+
+                    <!-- brave Cookie -->
+                    <ul class="btn-icon__wrap btn-brave">
+                        <li class="icon-bg" onclick="characterChange2(0)">
+                            <img src="img/brave-cookie.webp" alt="">
+                        </li>
+                        <li class="icon-bg" onclick="characterChange2(1)">
+                            <img src="img/strawberry-cookie.webp" alt="">
+                        </li>
+                        <li class="icon-bg" onclick="characterChange2(2)">
+                            <img src="img/wizard-cookie.webp" alt="">
+                        </li>
+                        <li class="icon-bg" onclick="characterChange2(3)">
+                            <img src="img/chili-pepper-cookie.webp" alt="">
+                        </li>
+                        <li class="icon-bg" onclick="characterChange2(4)">
+                            <img src="img/custard-cookie.webp" alt="">
+                        </li>
+                    </ul>
+
+                    <!-- legend Cookie -->
+                    <ul class="btn-icon__wrap btn-legend">
+                        <li class="icon-bg" onclick="characterChange3(0)">
+                            <img src="img/moonlight-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange3(1)">
+                            <img src="img/sea-fairy-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange3(2)">
+                            <img src="img/fire-spirit-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange3(3)">
+                            <img src="img/wind-archer-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange3(4)">
+                            <img src="img/millennial-tree-cookie.webp" alt="">
+                        </a></li>
+                    </ul>
+
+                    <!-- villain Cookie -->
+                    <ul class="btn-icon__wrap btn-villain">
+                        <li class="icon-bg" onclick="characterChange4(0)">
+                            <img src="img/dark-enchantress-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange4(1)">
+                            <img src="img/licorice-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange4(2)">
+                            <img src="img/poison-mushroom-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange4(3)">
+                            <img src="img/pomegranate-cookie.webp" alt="">
+                        </a></li>
+                        <li class="icon-bg" onclick="characterChange4(4)">
+                            <img src="img/dark-choco-cookie.webp" alt="">
+                        </a></li>
+                    </ul>
+
+                </div>
+
+                <div class="character-info">
+
+                    <!-- hero Cookie -->
+                    <div class="hero-cookie">
+
+                        <!-- 0 -->
+                        <div class="cookie-inner" id="hero-01">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/pure-vanilla-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">영웅쿠키</p>
+                                <h4 class="character-cookiname">퓨어바닐라 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">김예림</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    자연의 축복을 듬뿍 받은
+                                    우유크림과 향긋한 바닐라
+                                    열매가 들어간 아주 포근한 쿠키.
+                                    사르르 부드러워 어디에나 잘
+                                    어울리는 바닐라처럼, 친절하고
+                                    상냥한 퓨어바닐라 쿠키와는
+                                    누구나 친구가 될 수 있다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="cookie-inner" id="hero-02">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/hollyberry-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">영웅쿠키</p>
+                                <h4 class="character-cookiname">홀리베리 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">이새아</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    이 쿠키의 선명한 붉은 빛을 보라. 세상에서 가장 뜨거운 햇빛을 받고 자란 베리나무, 그중에서도 유독 짙은 빛깔의 열매를 엄선해 넣었다. 그 빛깔부터 어찌나 열정적이고 뜨거운지, 만나는 쿠키마다 진한 우정을 나누지 않고서야 못 배기는 쿠키가 되었다고.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="cookie-inner" id="hero-03">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/golden-cheese-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">영웅쿠키</p>
+                                <h4 class="character-cookiname">골드치즈 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">김연우</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    흘러넘칠 정도로 탐욕스런 황금 치즈를 잔뜩 넣어 만든 금색의 쿠키. 풍미 가득한 치즈 기둥, 윤기 좔좔 황금 금고, 눈부신 골드치즈 조각상까지. 온통 황금을 덧발라 번쩍거리는 골드치즈 왕국에서도 가장 높고 반짝이는 곳을 독차지했다.
+                                </p>
+        
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="cookie-inner" id="hero-04">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/dark-cacao-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">영웅쿠키</p>
+                                <h4 class="character-cookiname">다크카카오 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">정승욱</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    눈보라가 휘몰아치는 절벽 끝에서 자란 다크카카오 열매를 건조한 겨울 바람에 한 번 더 말렸더니 쓰디쓴 카카오닙스가 되었다. 반죽이 얼어버릴 정도로 운 곳에서 자라나서인지 단맛이라고는 전혀 없이 차갑고 고독해진 쿠키.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="cookie-inner" id="hero-05">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/white-lily-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">영웅쿠키</p>
+                                <h4 class="character-cookiname">세인트릴리 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">송하림</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    달빛만이 빛나던 어느 밤에, 비를 맞고 조용히 피어난 순백의 백합꽃을 닮은 쿠키. 차분히 가라앉은 눈빛을 보고 있노라면 조용하고도 침착하게 세상의 진리를 탐구하고자 하는 호기심이 비친다.
+                                </p>
+        
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- brave Cookie -->
+                    <div class="brave-cookie">
+
+                        <!-- 0 -->
+                        <div class="cookie-inner" id="brave-01">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/brave-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">용감한 쿠키와 친구들</p>
+                                <h4 class="character-cookiname">용감한 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">양정화</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    맨 처음 탈출을 감행한 용감한 쿠키.
+                                    마녀의 오븐 속에서 구워지고 있던 쿠키가
+                                    어떻게 해서 생명을 얻게 되었는지
+                                    알려져 있지 않다. 아마도 쿠키를 만들던
+                                    마녀가 생강가루와 생명을 주는 마법가루를
+                                    혼동했던 것 아닐까?
+                                </p>
+    
+                            </div>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="cookie-inner" id="brave-02">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/strawberry-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">용감한 쿠키와 친구들</p>
+                                <h4 class="character-cookiname">딸기맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">윤미나</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    부끄러움이 많아 좋은점이 있다면 달콤한 딸기향이 쉽게 날아가지 않는다는 것. 다른 쿠키들처럼 활발하게 움직였다면, 사실 딸기가 직접 들어있지는 않고 향만 첨가되어있다는 사실을 금방 들켜버렸을지도 모른다. 하지만 젤리들을 녹여 딸기젤리로 만들 정도로 달콤상큼한 향이니 자신감을 가지기를!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="cookie-inner" id="brave-03">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/wizard-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">용감한 쿠키와 친구들</p>
+                                <h4 class="character-cookiname">마법사맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">이현진</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    정말 우연히 마녀의 마법사탕지팡이를 얻게된 이후로, 매우 특별하고도 강력한 마법을 사용할 수 있게된 쿠키. 톡톡 터지는 식감의 팝핑캔디 아이스크림을 멋스럽게 얹어, 마법사다운 맛을 더했다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="cookie-inner" id="brave-04">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/chili-pepper-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">용감한 쿠키와 친구들</p>
+                                <h4 class="character-cookiname">칠리맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">윤은서</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    혀에 닿기만 해도 불처럼 매운 칠리소스가 법적인 기준보다 훨씬 많이 들어가는 바람에, 법 따위 신경쓰지 않는 독하디 독한 쿠키가 탄생했다! 가는 곳마다 시끌벅적 요란한 소동을 일으키는 이 쿠키는, 값비싸고 반짝이는 것만 보면 송두리째 훔쳐가고 먼지만 남겨버린다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="cookie-inner" id="brave-05">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/custard-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">용감한 쿠키와 친구들</p>
+                                <h4 class="character-cookiname">커스터드 3세맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">이자명</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    어느 옛날 있었던 멋지고 웅장한 왕국처럼 어엿한 자신만의 왕국을 만드는 것이 꿈인 커스터드 3세맛 쿠키. 머리 위의 커스터드가 모양이 잡히기도 전부터 왕국 이야기를 들으며 왕이 되기 위한 수행을 해왔다고 주장한다.
+                                </p>
+        
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- legend Cookie -->
+                    <div class="legend-cookie">
+
+                        <!-- 0 -->
+                        <div class="cookie-inner" id="legend-01">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/moonlight-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">전설쿠키</p>
+                                <h4 class="character-cookiname">달빛술사 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">박선영</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    밤하늘을 담은 머리카락을 날리며 꿈꾸듯
+                                    달리는 달빛술사 쿠키. 아주 오랜 옛날 마법사들의 도시에 있던 마법사들이 의해 만들어져 마법의 비밀을 전수받았다. 지금은 마법사들이 모두 사라지고 없지만, 꿈을 꾸고 있을 때 더욱 강해지는 마법 능력으로 홀로 마법사들의 흔적을 지키고 있다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="cookie-inner" id="legend-02">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/sea-fairy-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">전설쿠키</p>
+                                <h4 class="character-cookiname">바다요정 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">문선희</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    바다를 벗어나면 얼어버리는 차가운 저주에 걸려있던 바다요정 쿠키. 운명을 거스르려다가 얼어붙어 버렸지만, 쿠키들이 따뜻한 마음을 모아준 덕에 돌아올 수 있었다. 지금은 냉기와 물의 힘으로 쿠키들의 든든한 지원군이 되는 바다요정 쿠키.
+                                </p>
+        
+                                <div class="btn-updown">
+                                    <a class="btn-up" href=""><img src="img/btn-slide.png" alt=""></a>
+                                    <a class="btn-down" href=""><img src="img/btn-slide.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="cookie-inner" id="legend-03">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/fire-spirit-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">전설쿠키</p>
+                                <h4 class="character-cookiname">불꽃정령 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">박성태</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    뜨거운 용의 협곡에서 살아남으려 노력하는 쿠키들이 있는 반면, 그곳의 영험한 불의 기운으로 탄생한 전설적인 쿠키가 여기에 있다. 붉은 용의 구슬을 지니고 있는 것을 보면, 영원한 불속에 갇혔던 쿠키가 붉은 용의 호의, 또는 어떤 거래로 인해 생명을 되찾게 된 것임을 짐작할 수 있다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="cookie-inner" id="legend-04">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/wind-archer-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">전설쿠키</p>
+                                <h4 class="character-cookiname">바람궁수 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">손수호</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    원래는 초록을 사랑하던 바람이었다. 그의 일과는 숲과 비스킷 동물들 사이를 누비며 싱그럽고 달콤한 향을 퍼뜨리는 일이었다. 위험에 빠진 디저트 숲을 지키기 위해 신비로운 존재로부터 생명의 힘을 받아 쿠키의 형상을 갖게 되었다고 한다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="cookie-inner" id="legend-05">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/millennial-tree-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">전설쿠키</p>
+                                <h4 class="character-cookiname">천년나무 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">안효민</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    비밀스러운 숲 속에 천년의 영광을 누리던 고목이 있었다. 대지를 돌보기 위해 땅 속 깊이 뿌리를 뻗어나가던 이 나무는, 새빨간 저주가 숲을 침범하자 스스로를 봉인하며 잎을 떨구고 잠에 들었다. 쿠키들의 정성으로 깨어난 이후, 다른 쿠키들과 함께 세상 밖을 나선 천년나무 쿠키.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- villain Cookie -->
+                    <div class="villain-cookie">
+
+                        <!-- 0 -->
+                        <div class="cookie-inner" id="villain-01">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/dark-enchantress-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">악당쿠키</p>
+                                <h4 class="character-cookiname">어둠마녀 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">남유정</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    천 년에 한 번 온다고 하는 '마녀들의 밤'. 각지에서 모인 마녀들이 연회를 벌이던 그곳에서 어둠마녀 쿠키가 만들어졌다고 한다. 어둠의 힘을 응축시켜 만든 검고 붉은 반죽에 독을 머금은 새빨간 석류 시럽을 뿌려 아찔하게 장식해 치명적인 매력을 품고 있다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 1 -->
+                        <div class="cookie-inner" id="villain-02">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/licorice-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">악당쿠키</p>
+                                <h4 class="character-cookiname">감초맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">엄상현</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    씹으면 씹을수록 검게 물들어버리는 감초에 푹 절여 만든 쿠키. 불길한 모양의 커다란 낫을 들고다니는 이 쿠키는 늘 어딘지 모르게 비열한 웃음을 지으며 킥킥대기 일쑤다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="cookie-inner" id="villain-03">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/poison-mushroom-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">악당쿠키</p>
+                                <h4 class="character-cookiname">독버섯맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">김율</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    아무리 먹음직스러워도, 탐스럽고 통통해도 먹어서는 안 되는 것이 있다. 어질어질 보라버섯이 바로 그것! 배가 너무도 고팠던 어느 날 독버섯을 먹어버려, 그 영향으로 멍하고 굼뜬 쿠키가 되어버린 독버섯맛 쿠키.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="cookie-inner" id="villain-04">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/pomegranate-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">악당쿠키</p>
+                                <h4 class="character-cookiname">석류맛 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">배정미</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    강력한 주술의 땅에서 자란 석류 한 알을 통째로 얹어 영험한 기운이 느껴지는 쿠키. 진하게 농축된 석류 시럽으로 맛을 더해 유난히도 새빨갛다. 신비로운 석류 나무를 모시던 어느 날 어둠을 따르리라는 운명을 계시받게 되는데…
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="cookie-inner" id="villain-05">
+                            <div class="character-card">
+                                <img class="character-card__img" src="img/dark-choco-cookie.png" alt="">
+                            </div>
+        
+                            <div class="character-text">
+                                <p class="character-cookicate">악당쿠키</p>
+                                <h4 class="character-cookiname">다크초코 쿠키</h4>
+                                <h5 class="character-voiceactor">
+                                    성우. <span class="voiceactor-name">최원형</span>
+                                    <span class="btn-sound">
+                                        <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M.473 20.899L20.1 1.27l19.628 19.628-19.628 19.628L.473 20.9z" stroke="#FFF3CD" stroke-width="0.5"></path><path clip-rule="evenodd" d="M37.66 26.238L24.886 39.014a8.938 8.938 0 00-9.602-.033L2.35 26.047a8.927 8.927 0 00-.307-9.99L14.705 3.396a8.924 8.924 0 0010.64-.151l12.74 12.74a8.935 8.935 0 00-.424 10.254z" stroke="#FFF3CD" stroke-width="0.5"></path><path d="M22 13l-5 4h-4v6h4l5 4V13zM26.54 16.46a5 5 0 010 7.07" stroke="#FFF3CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                </h5>
+                                <p class="character-cookieinfo">
+                                    한때는 영웅이 되겠다는 일념 하에 겁없이 암흑의 세계로 모험을 떠났다. 그러던 어느날 금지된 딸기잼 마법검을 손에 넣게 되었고 그 순간 어둠의 기운에 사로잡혀 다시 예전의 삶으로 돌아갈 수 없게 되어버렸다.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- world -->
+    <section id="world">
+        <div class="world__wrap">
+            <div class="world-inner">
+
+                <div class="deco__wrap">
+                    <div class="left-deco">
+                        <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                    </div>
+                    <div class="center-deco">
+                        <img src="img/centerDeco.png" alt="">
+                    </div>
+                    <div class="right-deco">
+                        <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                    </div>
+                </div>
+                <div class="text__wrap">
+                    <h3 class="sub-title__light">COOKIERUN KINGDOM</h3>
+                    <h2 class="title__light">세계관 스토리</h2>
+                </div>
+
+                <!-- world text -->
+                <div class="world-text">
+                    <p>
+                        멀고 먼 옛날…<br>
+                        철과 불과 혼돈의 시대의 열기가 가라앉고<br>
+                        마녀들이 구워낸 달콤하고 바삭한 피조물들이<br>
+                        세상에 가득하니<br>
+                        그 중에서도 가장 빛나고 고결한 ‘소울 잼’을 지닌<br>
+                        다섯 쿠키들의 등장은 마치 구원과도 같았다.<br>
+                        <br>
+                        고귀한 지혜와 강렬한 힘에<br>
+                        쿠키들이 모여들고<br>
+                        영웅들은 왕이 되어<br>
+                        쿠키 문명은 대 부흥의 시대를 맞는다.<br>
+                        <br>
+                        하지만 찬란했던 시절도 잠시<br>
+                        어둠을 자처하는 자의 등장으로<br>
+                        땅엔 어둠이 스며들고 하늘엔 악이 창궐해<br>
+                        온 땅에 혼돈의 그림자가 드리우기 시작하는데<br>
+                        이에 평화를 수호하는<br>
+                        다섯 쿠키들이 마침내 일어서고<br>
+                        해질녘의 어느 날,<br>
+                        드디어 쿠키들의 운명이 걸린<br>
+                        최후의 전쟁이 시작된다.
+                    </p>
+                </div>
+
+                <!-- world img -->
+                <div class="world-img">
+                    <img class="world-bg" src="img/gameStoryBackground.webp" alt="">
+                    <img class="front-cloud" src="img/frontCloud.webp" alt="">
+                    <div class="cookie-img__1">
+                        <img class="yellow-cookie" src="img/yellowCookie.png" alt="">
+                    </div>
+                    <div class="cookie-img__2">
+                        <img class="purple-cookie" src="img/purpleCookie.png" alt="">
+                        <img class="pink-cookie" src="img/pinkCookie.png" alt="">
+                    </div>
+                    <div class="cookie-img__3">
+                        <img class="white-cookie" src="img/whiteCookie.png" alt="">
+                        <img class="orange-cookie" src="img/orangeCookie.png" alt="">
+                    </div>
+                    <img class="back-cloud" src="img/backCloud.webp" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- media -->
+    <section id="media">
+        <div class="media__wrap">
+
+            <div class="deco__wrap">
+                <div class="left-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+                <div class="center-deco">
+                    <img src="img/centerDeco.png" alt="">
+                </div>
+                <div class="right-deco">
+                    <svg viewBox="0 0 179 79" fill="#C08D55" width="178px" xmlns="http://www.w3.org/2000/svg" class="left css-qfo2e" color="#C08D55"><path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M176.856 4.407a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-10 0a1.47 1.47 0 11-.002-2.94 1.47 1.47 0 01.002 2.94zm-8.081-.504H20.438c-.488 8.893-7.62 16.024-16.513 16.512v48.147a.965.965 0 11-1.931 0V13.884c0-.533.432-.965.966-.965 5.503 0 9.981-4.478 9.981-9.982 0-.534.432-.966.966-.966h54.868a.965.965 0 110 1.932zm-53.941 0c-.468 5.8-5.109 10.441-10.909 10.909v3.672c7.829-.483 14.099-6.754 14.582-14.581h-3.673zM0 0h7v7H0V0zm2.959 75.362a1.47 1.47 0 11.002 2.94 1.47 1.47 0 01-.002-2.94z"></path></svg>
+                </div>
+            </div>
+
+            <div class="text__wrap">
+                <h3 class="sub-title__light">COOKIERUN KINGDOM</h3>
+                <h2 class="title__light">미디어</h2>
+            </div>
+
+            <div class="media-list__wrap">
+                <ul class="media-list">
+                    <li class="media-list___li" onclick="modalOpen(0)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_1.jpg" alt="">
+                        </div>
+                        <p class="media-title">공식 OST '너를 찾을게' MV</p>
+                    </li>
+                    <li class="media-list___li" onclick="modalOpen(1)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_2.jpg" alt="">
+                        </div>
+                        <p class="media-title">미리보기 시리즈 - 전투편</p>
+                    </li>
+                    <li class="media-list___li" onclick="modalOpen(2)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_3.jpg" alt="">
+                        </div>
+                        <p class="media-title">미리보기 시리즈 - 캐릭터편</p>
+                    </li>
+                    <li class="media-list___li" onclick="modalOpen(3)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_4.jpg" alt="">
+                        </div>
+                        <p class="media-title">최후의 전투</p>
+                    </li>
+                    <li class="media-list___li" onclick="modalOpen(4)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_5.jpg" alt="">
+                        </div>
+                        <p class="media-title">검은가루 전쟁</p>
+                    </li>
+                    <li class="media-list___li" onclick="modalOpen(5)">
+                        <div class="btn-play__white">
+                            <svg viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-sa448w"><g filter="url(#playIcon_svg__filter0_d)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.467 0C5.552 0 4 1.535 4 3.43v41.142C4 46.466 5.552 48 7.467 48l34.04-21.413A2.998 2.998 0 0043 24a2.996 2.996 0 00-1.492-2.585L7.467 0z" fill="#fff"></path></g><defs><filter id="playIcon_svg__filter0_d" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                        </div>
+                        <div class="media-img__box">
+                            <img src="img/media_6.jpg" alt="">
+                        </div>
+                        <p class="media-title">영웅과 어둠의 시대</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-more">
+                <a href="https://www.youtube.com/channel/UCAOTbNctDD0Hg5MG0enQpMQ" target="_blank">
+                    <div class="btn-more__wrap">
+                        <img class="btn-more__left" src="img/btn-more-side.svg" alt="">
+                        <div class="btn-more__mid">
+                            <span><img src="img/green.svg" alt=""></span>
+                            <span>더보기</span>
+                            <span><img src="img/blue.svg" alt=""></span>
+                        </div>
+                        <img class="btn-more__right" src="img/btn-more-side.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <!-- media modal popup -->
+            <div class="media-modal">
+                <div class="media-modal__wrap">
+                    <div class="btn-close" onclick="modalClose()">
+                        <svg class="btn-close__x" viewBox="0 0 31 30" fill="#C08D55" xmlns="http://www.w3.org/2000/svg" class="css-14pan16"><path d="M2.86 3.435l.578-.575L26.18 25.601l-.574.579L2.86 3.434z"></path><path d="M23.39 25.361l1.029 1.025 4.198 2.231-2.231-4.202-1.025-1.024-1.97 1.97zM1.286 3.257l1.028 1.025 4.198 2.23-2.227-4.201-1.029-1.025-.12 1.851-1.85.12zM27.427 2.86l.574.579-22.74 22.74-.579-.574L27.427 2.86z"></path><path d="M5.5 23.39l-1.024 1.03-2.232 4.197 4.202-2.227 1.025-1.029-1.97-1.97zM27.6 1.294L26.576 2.32l-2.231 4.202 4.198-2.231 1.028-1.025-1.85-.124-.12-1.847z"></path><path d="M2.86 3.435l.578-.575L26.18 25.601l-.574.579L2.86 3.434z" stroke="#C08D55" stroke-width="0.5"></path><path d="M23.39 25.361l1.029 1.025 4.198 2.231-2.231-4.202-1.025-1.024-1.97 1.97zM1.286 3.257l1.028 1.025 4.198 2.23-2.227-4.201-1.029-1.025-.12 1.851-1.85.12zM27.427 2.86l.574.579-22.74 22.74-.579-.574L27.427 2.86z" stroke="#C08D55" stroke-width="0.5"></path><path d="M5.5 23.39l-1.024 1.03-2.232 4.197 4.202-2.227 1.025-1.029-1.97-1.97zM27.6 1.294L26.576 2.32l-2.231 4.202 4.198-2.231 1.028-1.025-1.85-.124-.12-1.847z" stroke="#C08D55" stroke-width="0.5"></path></svg>
+
+                        <svg class="btn-close__bg" viewBox="0 0 62 70" fill="#321700" stroke="#C08D55" xmlns="http://www.w3.org/2000/svg" class="css-nq4ubr"><g filter="url(#closeButtonPolygon_svg__filter0_d)"><path d="M31 1l25.98 15v30L31 61 5.02 46V16L31 1z"></path><path d="M31 1l25.98 15v30L31 61 5.02 46V16L31 1z" stroke-width="1.5"></path></g><defs><filter id="closeButtonPolygon_svg__filter0_d" x="0.269" y="0.134" width="61.462" height="69.732" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg>
+                    </div>
+                    <iframe class="meida-modal__video" width="1064" height="600" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer__wrap">
+
+            <!-- sns -->
+            <div class="btn-sns__wrap">
+                <div class="btn-facebook">
+                    <a href="https://www.facebook.com/CRKingdomKR/"  target='_blank'>
+                        <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#3C5C99"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M30.536 43.214c0-2.74-.01-5.48.009-8.219.003-.461-.124-.607-.575-.588-.836.034-1.674-.003-2.51.015-.339.01-.463-.086-.46-.453.017-1.71.015-3.42.002-5.13-.003-.33.094-.436.419-.43.856.02 1.713-.025 2.567.018.495.025.596-.154.587-.623a86.062 86.062 0 01-.001-3.906c.033-1.59.451-3.074 1.378-4.366 1.17-1.634 2.836-2.382 4.76-2.47 1.974-.09 3.953-.04 5.929-.062.276-.003.357.098.357.372-.009 1.728-.01 3.458.002 5.187.003.308-.096.402-.39.396-.952-.015-1.903-.008-2.852-.005-1.266.005-2.023.67-2.102 1.95-.064 1.026-.017 2.059-.04 3.09-.01.366.204.341.441.341 1.445-.001 2.891.014 4.336-.01.424-.008.563.092.515.547a234.633 234.633 0 00-.482 5.161c-.033.389-.206.463-.548.457-1.14-.019-2.28-.012-3.422-.005-.82.005-.74-.122-.74.732-.004 5.362-.01 10.726.013 16.089.003.566-.14.707-.688.696a148.68 148.68 0 00-5.875.002c-.551.01-.642-.18-.638-.683.019-2.702.008-5.402.008-8.103z" fill="#fff"></path></svg>
+                    </a>
+                </div>
+                <div class="btn-twitter">
+                    <a href="https://twitter.com/CRKingdomKR"  target='_blank'>
+                        <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#37AEE1"></circle><path d="M29.693 49.213c12.831 0 19.847-10.854 19.847-20.264 0-.31-.006-.616-.02-.921A14.368 14.368 0 0053 24.34c-1.25.567-2.595.948-4.006 1.121a7.122 7.122 0 003.067-3.94 13.807 13.807 0 01-4.43 1.729 6.897 6.897 0 00-5.09-2.25c-3.853 0-6.977 3.19-6.977 7.122 0 .559.06 1.102.181 1.624-5.797-.298-10.938-3.132-14.379-7.442a7.211 7.211 0 00-.945 3.58 7.157 7.157 0 003.104 5.929 6.813 6.813 0 01-3.159-.891c-.002.03-.002.06-.002.09 0 3.45 2.405 6.33 5.597 6.983a6.814 6.814 0 01-3.15.122c.888 2.83 3.463 4.89 6.518 4.947a13.82 13.82 0 01-8.665 3.05c-.563 0-1.118-.033-1.664-.099a19.46 19.46 0 0010.693 3.198z" fill="#fff"></path></svg>
+                    </a>
+                </div>
+                <div class="btn-youtube">
+                    <a href="https://www.youtube.com/channel/UCAOTbNctDD0Hg5MG0enQpMQ"  target='_blank'>
+                        <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#C7252D"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M50.52 21.854a5.146 5.146 0 013.627 3.627C55 28.675 55 35.35 55 35.35s0 6.67-.853 9.868a5.146 5.146 0 01-3.628 3.628c-3.197.853-16.019.853-16.019.853s-12.815 0-16.02-.853a5.146 5.146 0 01-3.627-3.628C14 42.021 14 35.35 14 35.35s0-6.675.854-9.87a5.152 5.152 0 013.627-3.627C21.685 21 34.5 21 34.5 21s12.822 0 16.02.854zm-9.595 13.455l-10.65 6.15v-12.3l10.65 6.15z" fill="#fff"></path></svg>
+                    </a>
+                </div>
+                <div class="btn-navercafe">
+                    <a href="https://cafe.naver.com/crkingdom"  target='_blank'>
+                        <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="35" fill="#3AAE38"></circle><g clip-path="url(#naver-cafe_svg__clip0)" fill="#fff"><path d="M45.9 17c0 5.19-4.21 9.401-9.398 9.401H25.889c0-5.193 4.208-9.401 9.399-9.401H45.9z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M49.46 30.767a6.535 6.535 0 016.538 6.54 6.538 6.538 0 01-6.537 6.536h-2.12c-1.977 5.394-7.16 9.242-13.24 9.242-7.788 0-14.101-6.312-14.101-14.1v-8.218h29.46zm-1.388 10.11h1.389a3.573 3.573 0 00-.002-7.146h-1.26v5.254c0 .641-.044 1.272-.127 1.892z"></path></g><defs><clipPath id="naver-cafe_svg__clip0"><path fill="#fff" transform="translate(20 17)" d="M0 0h36v36.085H0z"></path></clipPath></defs></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- legal -->
+            <div class="footer-legal__wrap">
+                <div class="footer-legal">
+                    <a href="">이용약관</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="">개인정보 보호정책</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="">고객센터</a>
+                </div>
+            </div>
+
+            <!-- footer info -->
+            <div class="footer-info">
+                <p>서울특별시 강남구 도산대로 327</p>
+                <p>전화: 02-1899-3674 팩스: 02-2148-0629</p>
+                <p>© 2021 Devsisters Corp. All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-logo">
+                <svg viewBox="0 0 448 58" width="340px" fill="#FFF" stroke="#FFF" class="css-16686xk"><path d="M0 1.4h22.5c17.1 0 31.1 12.1 31.1 27.5 0 15.5-14.1 27.5-31.1 27.5H0v-55zm15.9 43h3.6c9.5 0 17.6-4.7 17.6-15.4 0-9.9-7.2-15.4-17.4-15.4H16v30.8zM73.6 13.6v9.2h18v12.1h-18v9.5h18.9v12.1H57.7V1.4h34.8v12.2zM124.7 34.9l14.9-33.5h17.2l-26.1 55.1h-12.3L92.7 1.4H110zM191.1 15.6c-2.9-2.2-6.6-3.6-10.5-3.6-2.9 0-6.8 1.5-6.8 4.6 0 3.2 4.3 4.5 7.1 5.3L185 23c8.5 2.3 15.1 6.1 15.1 15 0 5.5-1.5 11.1-6.3 14.8-4.8 3.6-11.2 5.2-17.4 5.2-7.7 0-15.2-2.3-21.5-6.3l6.8-11.6c4 3.2 8.7 5.7 14.1 5.7 3.7 0 7.7-1.7 7.7-5.5 0-4-6.3-5.4-9.7-6.3-10-2.6-16.6-4.9-16.6-15.5 0-11.2 8.9-18.5 21.1-18.5 6.2 0 13.7 1.8 19.1 4.5l-6.3 11.1zM204.3 1.4h15.9v55.1h-15.9zM260.9 15.6c-2.9-2.2-6.7-3.6-10.5-3.6-2.9 0-6.8 1.5-6.8 4.6 0 3.2 4.3 4.5 7.1 5.3l4.1 1.1c8.5 2.3 15.1 6.1 15.1 15 0 5.5-1.5 11.1-6.3 14.8-4.8 3.6-11.2 5.2-17.3 5.2-7.7 0-15.2-2.3-21.5-6.3l6.8-11.6c4 3.2 8.7 5.7 14.1 5.7 3.7 0 7.7-1.7 7.7-5.5 0-4-6.2-5.4-9.6-6.3-10-2.6-16.5-4.9-16.5-15.5C227 7.3 235.8 0 248.1 0c6.2 0 13.7 1.8 19.1 4.5l-6.3 11.1zM298.3 56.5h-15.8V13.6h-13.2V1.4h42.2v12.2h-13.2zM329.9 13.6v9.2h17.9v12.1h-17.9v9.5h18.9v12.1H314V1.4h34.8v12.2zM406.2 56.5h-19.8l-15-21.2h-.1v21.2h-15.9V1.4h23.8c12.1 0 21.3 5.2 21.3 17 0 7.6-4.7 14.2-13.4 15.6l19.1 22.5zm-34.9-30.3h1.5c5.2 0 11-.9 11-6.9s-5.8-6.9-11-6.9h-1.5v13.8z"></path><path d="M439.2 15.6c-2.9-2.2-6.6-3.6-10.5-3.6-2.9 0-6.8 1.5-6.8 4.6 0 3.2 4.3 4.5 7 5.3L433 23c8.5 2.3 15.1 6.1 15.1 15 0 5.5-1.4 11.1-6.3 14.8-4.8 3.6-11.2 5.2-17.3 5.2-7.7 0-15.2-2.3-21.5-6.3l6.8-11.6c4 3.2 8.7 5.7 14.1 5.7 3.7 0 7.7-1.7 7.7-5.5 0-4-6.2-5.4-9.6-6.3-10-2.6-16.6-4.9-16.6-15.5 0-11.2 8.8-18.5 21.1-18.5 6.2 0 13.7 1.8 19.1 4.5l-6.4 11.1z"></path></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="js/index.js"></script>
+</body>
+</html>
