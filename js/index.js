@@ -700,17 +700,21 @@ window.onclick = function(event) {
 }
 
 
-
+// mobile menu
 
 var gnbMobile = document.getElementsByClassName('gnb-mobile__wrap')[0];
 
 var btnMenuOpen = document.getElementsByClassName('gnb-mobile__open')[0];
 var btnMenuClose = document.getElementsByClassName('gnb-mobile__close')[0];
 
+var body = document.getElementById('body');
+
 function mobileMenuOpen() {
     gnbMobile.style.display = "block";
     btnMenuOpen.style.display = "none";
     btnMenuClose.style.display = "block";
+    body.style.height = "100%";
+    body.style.overflow = "hidden";
 
 }
 
@@ -718,6 +722,8 @@ function mobileMenuClose() {
     gnbMobile.style.display = "none";
     btnMenuOpen.style.display = "block";
     btnMenuClose.style.display =  "none";
+    body.style.height = "auto";
+    body.style.overflow = "visible";
 }
 
 

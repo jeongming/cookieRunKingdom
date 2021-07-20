@@ -66,6 +66,7 @@
 
 .main-visual__video { width: 100%; height: 100vh; overflow: hidden; opacity: 0.5; background-color: #000000; }
 
+
 .main-visual__contentbox { position: absolute; top: 20%; left: 15%; right: 15%; text-align: center; }
 
 .main-visual__logo img { width: 360px; }
@@ -380,6 +381,7 @@
 
 .gnb-mobile__wrap { display: none; text-align: center;  padding: 30px;  width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.8);  z-index: 99; position: relative; }
 
+.gnb-mobile__logo { margin: 100px 0 0 0; }
 .gnb-mobile__logo img { width: 200px; margin: 0 0 50px 0; }
 
 .gnb-mobile__menu { font-size: 40px; font-weight: 400; margin: 0 0 40px 0; }
@@ -411,10 +413,9 @@
 
 /* cafe link */
 
-.cafe-link img { position: fixed; top: 250px; right: 50px; width: 83px; }
+.cafe-link img { position: fixed; top: 150px; right: 20px; width: 50px; }
 
 
-/* 여기서부터 위쪽은 나중에 수정*********************** */
 
 /* text-deco */
 
@@ -427,7 +428,6 @@
 .main-visual__contentbox { top: 15%; }
 .market-link img { width: 140px; }
 .btn-scroll { margin: 90px 0; }
-
 
 
 /* modal popup */
@@ -579,22 +579,24 @@
     .gnb-mobile { display: block; }
     
     
-    .gnb-mobile__open { position: absolute; top: 30px; left: 30px; display: block; }
-    .gnb-mobile__open img { width: 50px; }
+    .gnb-mobile__open { position: absolute; top: 30px; left: 20px; display: block; }
+    .gnb-mobile__open img { width: 40px; }
     
     .gnb-mobile__close { position: absolute; top: 30px; left: 30px; display: block; }
+    .gnb-mobile__close svg { width: 40px;  }
     
-    .gnb-mobile__wrap { display: none; text-align: center;  padding: 30px;  width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.8);  z-index: 99; position: relative; }
+    .gnb-mobile__wrap { display: none; text-align: center;  padding: 30px; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.8);  z-index: 99; position: relative; }
     
+    .gnb-mobile__logo { margin: 70px 0 0 0; }
     .gnb-mobile__logo img { width: 200px; margin: 0 0 50px 0; }
     
-    .gnb-mobile__menu { font-size: 40px; font-weight: 400; margin: 0 0 40px 0; }
+    .gnb-mobile__menu { font-size: 28px; font-weight: 400; margin: 0 0 40px 0; }
     .gnb-mobile__menu li { margin: 0 0 10px 0; }
     .gnb-mobile__menu a { color: #ffffff; }
     
-    .deco-line { margin: 10px 0 50px; }
+    .deco-line { margin: 10px 0 30px; }
     
-    .sns-link__wrap { display: flex; justify-content: center; align-items: center; margin: 0 0 40px 0; }
+    .sns-link__wrap { display: flex; justify-content: center; align-items: center; margin: 0 0 20px 0; }
     .sns-link__wrap li { margin: 0 20px 0 0; }
     .sns-link__wrap li:last-child { margin: 0; }
     
@@ -621,7 +623,6 @@
     .cafe-link img { position: fixed; top: 50px; right: 20px; width: 40px; }
     
     
-    /* 여기서부터 위쪽은 나중에 수정*********************** */
     
     /* text-deco */
     
@@ -631,10 +632,12 @@
     
     /* main visual CSS */
     
-    .main-visual__logo img { width: 260px; }
-    .main-visual__contentbox { top: 15%; }
-    .market-link img { width: 140px; }
-    .btn-scroll { margin: 70px 0; }
+    .main-visual__logo img { width: 200px; }
+    .btn-play svg { width: 100px; margin: 10px 0; cursor: pointer; }
+
+    .main-visual__contentbox { top: 20%; }
+    .market-link img { width: 130px; }
+    .btn-scroll svg { width: 30px; margin: 50px 0; }
 
 
     /* modal popup */
@@ -707,16 +710,16 @@
     .characters-content { display: flex; flex-direction: column; justify-content: center; }
     
     .btn-icon__wrap { display: flex; flex-direction: row; margin: 0 30px 0 0; }
-    .btn-icon__wrap li { margin: 0 0 25px 0; }
-    
+    .btn-icon__wrap li { margin: 0 10px 25px 0; }
+
     .btn-hero { display: ''; }
     .btn-brave { display: none; }
     .btn-legend { display: none; }
     .btn-villain { display: none; }
 
 
-    .icon-bg { display: block; width: 70px; height: 70px; background-image: url(../img/icon-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
-    .icon-bg img { width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; }
+    .icon-bg { display: block; width: 60px; height: 60px; background-image: url(../img/icon-bg.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .icon-bg img { width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
     
     .cookie-inner { display: flex; flex-direction: column; }
     
@@ -840,6 +843,7 @@
 
 .footer-logo svg { width: 240px; }
 
-
+.footer-info { font-size: 12px; text-align: center; color: #ffffff; margin: 20px 0; }
+.footer-info p { margin: 10px 0; }
 
 }
